@@ -32,34 +32,77 @@ body .header-items {
 body .items {
   padding-left: 34px;
 }
-body .first-item {
+body .first-section {
   display: flex;
   align-items: center;
+  position: relative;
 }
-body main .first-section {
-  display: flex;
-  align-items: center;
+body .nav-theBrand-container {
+  position: absolute;
+  left: 1367px;
+  width: 232px;
+  height: 764px;
 }
-body main table {
-  border-left: 12px solid #F16D7F;
+body .nav-theBrand-container .nav-theBrand-header {
   text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: 'Lato', sans-serif;
+  padding-top: 37px;
+  padding-bottom: 24px;
+}
+body .nav-theBrand-container .nav-theBrand-header span {
+  position: absolute;
+  font-size: 24px;
+  color: #5D5D5D;
+  top: 16px;
+  left: 203px;
+}
+body .nav-theBrand-container .nav-theBrand {
+  font-family: 'Lato', sans-serif;
+}
+body .nav-theBrand-container .nav-theBrand__item {
+  padding-bottom: 20px;
+}
+body .nav-theBrand-container .nav-theBrand__item__link {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #F16D7F;
+  font-size: 14px;
+  font-weight: 400;
+}
+body .nav-theBrand-container .nav-theBrand__clothes {
+  text-indent: 22px;
+}
+body .nav-theBrand-container .nav-theBrand__clothes__item {
+  padding-top: 12px;
+}
+body .nav-theBrand-container .nav-theBrand__clothes__link {
+  text-decoration: none;
+  color: #5D5D5D;
+  font-size: 14px;
+  font-weight: 400;
+}
+body .nav-theBrand-container .nav-theBrand__clothes__link:hover {
+  color: #F16D7F;
+}
+body .theBrand__content {
+  border-left: 12px solid #F16D7F;
+  padding-left: 16px;
   margin-left: 64px;
 }
-body main table tr:first-child {
-  font-style: normal;
-  font-weight: 900;
+body .theBrand__content__header {
+  text-transform: uppercase;
   font-size: 48px;
-  line-height: 58px;
+  font-weight: 900;
 }
-body main table tr:nth-child(2) {
+body .theBrand__content__text {
+  text-transform: uppercase;
   font-size: 32px;
   font-weight: 700;
 }
-body main table tr span {
+body .theBrand__content__text span {
   color: #F16D7F;
-}
-body main table tr td {
-  padding-left: 16px;
 }
 body main .second-section {
   margin-top: 64px;
@@ -173,6 +216,11 @@ body .third-section__button .button {
   font-size: 16px;
   border: 1px solid #F16D7F;
   padding: 14px 38px;
+}
+body .third-section__button .button:hover {
+  background-color: #F16D7F;
+  color: #ffff;
+  cursor: pointer;
 }
 body .fourth-section {
   margin-top: 95px;
