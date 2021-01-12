@@ -1,0 +1,166 @@
+.shoping-cart {
+  height: 148px;
+  background-color: #F8F3F4;
+  margin-bottom: 96px;
+}
+.shoping-cart__text {
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 400;
+  padding: 59px 0 60px 230px;
+  color: #F16D7F;
+}
+.shoping-section {
+  display: flex;
+}
+.shoping-section .shoping-cards {
+  padding-bottom: 128px;
+}
+.shoping-section .shoping-cards .clothing-card {
+  display: flex;
+  margin-bottom: 40px;
+  -webkit-box-shadow: 15px 9px 21px 0px rgba(117, 117, 117, 0.33);
+  -moz-box-shadow: 15px 9px 21px 0px rgba(117, 117, 117, 0.33);
+  box-shadow: 15px 9px 21px 0px rgba(117, 117, 117, 0.33);
+}
+.shoping-section .shoping-cards .clothing-card__content {
+  width: 390px;
+  position: relative;
+  padding-left: 31px;
+}
+.shoping-section .shoping-cards .clothing-card__content__header {
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 29px;
+  padding-top: 22px;
+  padding-bottom: 42px;
+  width: 200px;
+}
+.shoping-section .shoping-cards .clothing-card__content__price {
+  font-size: 22px;
+  font-weight: 400;
+  color: #575757;
+  padding-bottom: 6px;
+}
+.shoping-section .shoping-cards .clothing-card__content__price span {
+  color: #F16D7F;
+}
+.shoping-section .shoping-cards .clothing-card__content__color {
+  font-size: 22px;
+  font-weight: 400;
+  color: #575757;
+  padding-bottom: 6px;
+}
+.shoping-section .shoping-cards .clothing-card__content__size {
+  font-size: 22px;
+  font-weight: 400;
+  color: #575757;
+  padding-bottom: 6px;
+}
+.shoping-section .shoping-cards .clothing-card__content__quantity {
+  font-size: 22px;
+  font-weight: 400;
+  color: #575757;
+}
+.shoping-section .shoping-cards .clothing-card__content__quantity span {
+  width: 43px;
+  height: 24px;
+  border: 1px solid #EAEAEA;
+  padding: 1px 16px 1px 16px;
+  margin-left: 24px;
+}
+.shoping-section .shoping-cards .clothing-card__content__cross {
+  position: absolute;
+  font-size: 36px;
+  font-weight: 700;
+  color: #575757;
+  left: 350px;
+  top: 16px;
+}
+.shoping-section .shoping-cards__button {
+  font-size: 14px;
+  font-weight: 300;
+  text-transform: uppercase;
+  border: 1px solid #A4A4A4;
+  padding: 16px 41px 15px 38px;
+}
+.shoping-section .shoping-cards__button:hover {
+  background-color: #F16D7F;
+  color: #fff;
+  border: 1px solid #fff;
+  cursor: pointer;
+}
+.shoping-section .shoping-cards .button-continue {
+  margin-left: 192px;
+}
+.shoping-section .shoping-form {
+  margin-left: 128px;
+}
+.shoping-section .shoping-form__header {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 300;
+  display: block;
+  padding-bottom: 20px;
+}
+.shoping-section .shoping-form__input {
+  width: 360px;
+  height: 45px;
+  border: 1px solid #A4A4A4;
+  margin-bottom: 21px;
+}
+.shoping-section .shoping-form__input:focus {
+  border: 1px solid #F16D7F;
+}
+.shoping-section .shoping-form .get-a-quote {
+  text-transform: uppercase;
+  padding: 9px 14px 12px 15px;
+  border: 1px solid #A4A4A4;
+  margin-bottom: 57px;
+}
+.shoping-section .shoping-form .proceed-to-checkout {
+  width: 360px;
+  height: 214px;
+  background-color: #F5F3F3;
+  padding: 39px 34px 42px 44px;
+}
+.shoping-section .shoping-form .proceed-to-checkout .sub-total {
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: 400;
+  text-align: right;
+  margin-bottom: 12px;
+}
+.shoping-section .shoping-form .proceed-to-checkout .grand-total {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 300;
+  text-align: right;
+}
+.shoping-section .shoping-form .proceed-to-checkout .grand-total span {
+  font-weight: 700;
+  color: #F16D7F;
+  padding-left: 15px;
+}
+.shoping-section .shoping-form .proceed-to-checkout .separator {
+  background: #E2E2E2;
+  font-size: 1px;
+  height: 1px;
+  overflow: hidden;
+  margin: 21px 8px 17px 0;
+}
+.shoping-section .shoping-form .proceed-to-checkout__button {
+  text-transform: uppercase;
+  color: #fff;
+  width: 273px;
+  height: 50px;
+  font-weight: 300;
+  font-size: 16px;
+  background-color: #F16D7F;
+}
+.shoping-section .shoping-form .proceed-to-checkout__button:hover {
+  background-color: #fff;
+  color: #F16D7F;
+  cursor: pointer;
+  border: 1px solid #F16D7F;
+}
