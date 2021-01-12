@@ -73,3 +73,24 @@
     left: 65px;
     top: -6px;
 }
+.items {
+    padding-left: 34px;
+    position: relative;
+}
+
+.first-section {
+    display: flex;
+    align-items: center;
+    position: relative;
+    background-color: #F1E4E6;
+}
+
+.nav-brand-container {
+    position: absolute;
+    left: 1367px;
+    width: 232px;
+    height: 764px;
+    background-color: $color-white;
+    padding-left: 33px;
+    box-shadow: -15px 9px 21px 0px rgba(117, 117, 117, 0.33);
+
