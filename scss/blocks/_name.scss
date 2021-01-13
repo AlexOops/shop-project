@@ -1,0 +1,87 @@
+.name {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: $background-menu;
+
+    .nav-brand-container {
+        position: absolute;
+        left: 1367px;
+        top: 0;
+        width: 232px;
+        height: 764px;
+        background-color: $color-white;
+        padding-left: 33px;
+        box-shadow: -15px 9px 21px 0px rgba(117, 117, 117, 0.33);
+    }
+
+    .nav-brand-header {
+        @include font-tt(14px, 700, 17px, uppercase);
+        font-family: $font-family;
+        padding-top: 37px;
+        padding-bottom: 24px;
+
+        span {
+            position: absolute;
+            font-size: 24px;
+            color: $color-text;
+            top: 16px;
+            left: 203px;
+        }
+    }
+
+    .nav-brand {
+        font-family: $font-family;
+
+        &__item {
+            padding-bottom: 20px;
+        }
+
+        &__item-link {
+            text-decoration: none;
+            color: $color-pink;
+            @include font-tt(14px, 400, 17px, uppercase);
+        }
+
+        .nav-brand__clothes {
+            text-indent: 22px;
+
+            &-item {
+                padding-top: 12px;
+            }
+
+            &-link {
+                text-decoration: none;
+                color: $color-text;
+                @include font(14px, 400, 17px);
+
+                &:hover {
+                    color: $color-pink;
+                }
+            }
+        }
+    }
+
+    .brand {
+        display: flex;
+        align-items: center;
+    }
+
+    .brand__content {
+        border-left: 12px solid $color-pink;
+        padding-left: 16px;
+        margin-left: 64px;
+
+        &__header {
+            @include font-tt(48px, 900, 58px, uppercase);
+        }
+
+        &__text {
+            @include font-tt(32px, 700, 38px, uppercase);
+
+            span {
+                color: $color-pink;
+            }
+        }
+    }
+}

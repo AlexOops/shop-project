@@ -1,0 +1,50 @@
+.stock {
+    margin-top: 64px;
+
+    &__list {
+        @include flex-wrap-space-between;
+    }
+
+    &__item-container {
+        @include flex-column-center;
+    }
+
+    &__item-name {
+        @include font-tt(16px, 400, 19px, uppercase);
+        color: $color-white;
+    }
+
+    &__item-category {
+        @include font-tt(24px, 700, 29px, uppercase);
+        color: $color-pink;
+    }
+}
+
+.stock__item:first-child {
+    background-image: linear-gradient(rgba(33, 22, 22, 0.7), rgba(33, 22, 22, 0.7)), url("../img/women.png");
+    height: 260px;
+    width: 360px;
+    padding-top: 110px;
+}
+
+.stock__item:nth-child(2) {
+    background-image: linear-gradient(rgba(33, 22, 22, 0.7), rgba(33, 22, 22, 0.7)), url("../img/men.png");
+    height: 260px;
+    width: 360px;
+    padding-top: 110px;
+}
+
+.stock__item:nth-child(3) {
+    background-image: linear-gradient(rgba(33, 22, 22, 0.7), rgba(33, 22, 22, 0.7)), url("../img/kids.png");
+    height: 260px;
+    width: 360px;
+    padding-top: 110px;
+}
+
+.stock__item:last-child {
+    background-image: linear-gradient(rgba(33, 22, 22, 0.7), rgba(33, 22, 22, 0.7)), url("../img/accesories.png");
+    height: 180px;
+    width: 1140px;
+    margin-top: 30px;
+    padding-top: 65px;
+}

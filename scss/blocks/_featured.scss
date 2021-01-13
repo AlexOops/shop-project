@@ -1,0 +1,69 @@
+.featured {
+    margin-top: 97px;
+
+    &__name {
+        @include flex-column-center;
+
+        &-header {
+            @include font(30px, 400, 36px);
+        }
+
+        &-text {
+            @include font(14px, 400, 17px);
+            color: $color-featured;
+            margin-bottom: 48px;
+            padding-top: 6px;
+        }
+    }
+
+    &__list {
+        @include flex-wrap-space-between;
+    }
+
+    &__item {
+        width: 360px;
+        height: 581px;
+        background: $background-color-item;
+        margin-bottom: 30px;
+
+        &-containet {
+            padding: 25px 28px 20px 18px;
+        }
+
+        &-header {
+            @include font-tt(13px, 400, 16px, uppercase);
+            padding-bottom: 12px;
+        }
+
+        &-text {
+            @include font(14px, 300, 17px);
+            color: $color-text;
+        }
+
+        &-price {
+            @include font(16px, 400, 19px);
+            color: $color-pink;
+            padding-top: 18px;
+        }
+    }
+
+    &__button {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 95px;
+    }
+
+}
+
+.button {
+    @include font(16px, 400, 19px);
+    color: $color-pink;
+    border: 1px solid $color-pink;
+    padding: 14px 38px;
+
+    &:hover {
+        background-color: $color-pink;
+        color: $color-white;
+        cursor: pointer;
+    }
+}
