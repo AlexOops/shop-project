@@ -72,11 +72,11 @@
         padding-left: 16px;
         margin-left: 64px;
 
-        &__header {
+        &-header {
             @include font-tt(48px, 900, 58px, uppercase);
         }
 
-        &__text {
+        &-text {
             @include font-tt(32px, 700, 38px, uppercase);
 
             span {

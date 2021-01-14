@@ -1,63 +1,6 @@
 header {
   position: relative;
 }
-.navigation {
-  height: 148px;
-  background: #F8F3F4;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-left: 230px;
-}
-.navigation__text {
-  text-transform: uppercase;
-  color: #F16D7F;
-  font-family: 'Lato', sans-serif;
-  font-weight: 400;
-  font-size: 24px;
-}
-.navigation__list {
-  display: flex;
-  padding-right: 230px;
-}
-.navigation__item a {
-  font-family: 'Lato', sans-serif;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: #636363;
-  padding-left: 10px;
-}
-.navigation__item a:hover {
-  color: #F16D7F;
-}
-.filter {
-  display: flex;
-  padding: 51px 0 64px 0;
-}
-.filter__img {
-  text-transform: uppercase;
-  font-weight: 600;
-  font-style: 14px;
-  display: flex;
-}
-.filter__arrow-img {
-  padding-left: 11px;
-  fill: #F16D7F;
-}
-.filter__list {
-  display: flex;
-  padding-left: 320px;
-}
-.filter__item {
-  font-size: 14px;
-  font-weight: 400;
-  text-transform: uppercase;
-  color: #6F6E6E;
-  padding-right: 28px;
-}
-.filter__item img {
-  padding-left: 10px;
-}
 .catalog-section-first__item:nth-child(2),
 .catalog-section-first__item:nth-child(5),
 .catalog-section-first__item:nth-child(8) {

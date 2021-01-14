@@ -1,0 +1,163 @@
+.filter {
+    .breadcrumbs {
+        height: 148px;
+        background: $background-color;
+
+        &-container {
+            @include flex-center-space-between;
+            height: inherit;
+        }
+
+        &__header {
+            @include font-tt(24px, 400, 29px, uppercase);
+            color: $color-pink;
+            font-family: $font-family;
+        }
+
+        &__list {
+            display: flex;
+        }
+
+        &__link {
+            text-decoration: none;
+            @include font-tt(14px, 300, 17px, uppercase);
+            color: $color-grey;
+            padding-left: 10px;
+
+            &:hover {
+                color: $color-pink;
+            }
+        }
+    }
+
+    .filter-wrapper {
+        padding: 51px 0 64px 0;
+
+        .filter__img {
+            display: flex;
+
+            &-header {
+                @include font-tt(14px, 600, 17px, uppercase);
+            }
+
+            &-arrow {
+                padding-left: 20px;
+                fill: $color-pink;
+            }
+        }
+
+        .filter-category {
+            background-color: $color-white;
+            visibility: hidden;
+
+            &__head {
+                padding: 13px 0 16px 16px;
+                color: $color-pink;
+                text-transform: uppercase;
+            }
+
+            &__container {
+                width: 360px;
+                height: 531px;
+                box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+                padding-left: 17px;
+            }
+
+
+            &__item {
+                display: flex;
+                flex-direction: column;
+                padding-bottom: 18px;
+            }
+
+            &__link {
+                width: 327px;
+                @include font-tt(14px, 400, 17px, uppercase);
+                text-decoration: none;
+                color: $color-grey-text;
+                border-left: 5px solid $color-pink;
+                border-bottom: 1px solid $background-color-catalog;
+                padding-left: 11px;
+                padding-top: 12px;
+                padding-bottom: 12px;
+
+                &:hover {
+                    color: $color-pink;
+                }
+
+            }
+
+            &__junior {
+                padding-top: 24px;
+
+                &-item {
+                    padding-bottom: 11px;
+                    padding-left: 12px;
+                }
+
+                &-link {
+                    color: $color-grey-text;
+                    @include font-tt(14px, 400, 17px, capitalize);
+                    text-decoration: none;
+
+                    &:hover {
+                        color: $color-pink;
+                    }
+                }
+            }
+        }
+    }
+
+    .filter-wrapper:hover .filter-category {
+        visibility: visible;
+    }
+
+    .filter__list {
+        display: flex;
+        padding-left: 320px;
+    }
+
+    .filter__item {
+        @include font-tt(14px, 400, 17px, uppercase);
+        color: $color-grey-text;
+        padding-right: 28px;
+
+        img {
+            padding-left: 10px;
+        }
+    }
+
+    .filter-size {
+        visibility: hidden;
+        position: absolute;
+        top: 68px;
+        left: 544px;
+        width: 79px;
+        height: 103px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        background-color: #ffff;
+
+        &__list {
+            padding: 7px 11px 9px;
+        }
+
+        &__item {
+            padding-bottom: 5px;
+            color: $color-grey-text;
+        }
+    }
+
+    .filter__item:hover .filter-size {
+        visibility: visible;
+    }
+
+    .filter-wrapper {
+        position: relative;
+
+        .filter-category {
+            position: absolute;
+            top: 38px;
+            left: -32px;
+        }
+    }
+}
