@@ -5,7 +5,6 @@
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title>The Brand</title>
-     <link rel="stylesheet" href="css/reset.css">
      <link rel="stylesheet" href="css/style.css">
      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
      <script src="https://kit.fontawesome.com/b17de81baf.js" crossorigin="anonymous"></script>
@@ -33,7 +32,6 @@
                      <li class="main-navi__item"><a class="main-navi__link" href="product.html">Product</a></li>
                      <li class="main-navi__item"><a class="main-navi__link" href="cart.html">Cart</a></li>
                      <li class="main-navi__item"><a class="main-navi__link" href="registration.html">Registration</a>
-                     </li>
                      </li>
                  </ul>
                  <ul class="header-items">
@@ -75,8 +73,56 @@
              </div>
              <div class="filter-wrapper center">
                  <div class="filter__img ">
-                     <h1 class="filter__img-header">filter</h1>
-                     <img class="filter__img-arrow" src="img/catalog/filter.svg" alt="filter">
+                     <div class="filter__img-wrp">
+                         <h1 class="filter__img-header">filter</h1>
+                         <img class="filter__img-arrow" src="img/catalog/filter.svg" alt="filter">
+                         <div class="filter-category">
+                             <div class="filter-category__container">
+                                 <div class="filter__img filter-category__head">
+                                     <h1 class="filter__img-header">filter<span>&#9776;</span></h1>
+                                 </div>
+                                 <ul class="filter-category__list">
+                                     <li class="filter-category__item"><a class="filter-category__link"
+                                             href="#">category</a>
+                                         <ul class="filter-category__junior">
+                                             <li class="filter-category__junior-item"><a
+                                                     class="filter-category__junior-link" href="#">Accessories</a>
+                                             </li>
+                                             <li class="filter-category__junior-item"><a
+                                                     class="filter-category__junior-link" href="#">Bags</a></li>
+                                             <li class="filter-category__junior-item"><a
+                                                     class="filter-category__junior-link" href="#">Denim</a></li>
+                                             <li class="filter-category__junior-item"><a
+                                                     class="filter-category__junior-link" href="#">Hoodies &
+                                                     Sweatshirts</a></li>
+                                             <li class="filter-category__junior-item"><a
+                                                     class="filter-category__junior-link" href="#">Jackets & Coats</a>
+                                             </li>
+                                             <li class="filter-category__junior-item"><a
+                                                     class="filter-category__junior-link" href="#">Polos</a></li>
+                                             <li class="filter-category__junior-item"><a
+                                                     class="filter-category__junior-link" href="#">Shirts</a></li>
+                                             <li class="filter-category__junior-item"><a
+                                                     class="filter-category__junior-link" href="#">Shoes</a></li>
+                                             <li class="filter-category__junior-item"><a
+                                                     class="filter-category__junior-link" href="#">Sweaters &
+                                                     Knits</a></li>
+                                             <li class="filter-category__junior-item"><a
+                                                     class="filter-category__junior-link" href="#">Tanks</a></li>
+                                             <li class="filter-category__junior-item"><a
+                                                     class="filter-category__junior-link" href="#">T-Shirts</a></li>
+                                         </ul>
+                                     </li>
+                                     <li class="filter-category__item"><a class="filter-category__link"
+                                             href="#">brand</a>
+                                     </li>
+                                     <li class="filter-category__item"><a class="filter-category__link"
+                                             href="#">designer</a>
+                                     </li>
+                                 </ul>
+                             </div>
+                         </div>
+                     </div>
                      <ul class="filter__list">
                          <li class="filter__item">trending now <img src="img/catalog/arrow.svg " alt="arrow"></li>
                          <li class="filter__item ">
@@ -84,179 +130,123 @@
                                  <p>size <img src="img/catalog/arrow.svg " alt="arrow"></p>
                              </div>
                              <div class="filter-size">
-                                 <ul class="filter-size__list">
-                                     <li class="filter-size__item">
-                                         <input type="checkbox" class="checkbox" id="checkbox" />&nbsp;
-                                         <label for="checkbox">XS</label>
-                                     </li>
-                                     <li class="filter-size__item">
-                                         <input type="checkbox" class="checkbox" id="checkbox" />&nbsp;
-                                         <label for="checkbox">S</label>
-                                     </li>
-                                     <li class="filter-size__item">
-                                         <input type="checkbox" class="checkbox" id="checkbox" />&nbsp;
-                                         <label for="checkbox">M</label>
-                                     </li>
-                                     <li class="filter-size__item">
-                                         <input type="checkbox" class="checkbox" id="checkbox" />&nbsp;
-                                         <label for="checkbox">L</label>
-                                     </li>
-                                 </ul>
+                                 <form class="filter-size__list">
+                                     <input type="checkbox" id="checkbox-xs">&nbsp;
+                                     <label for="checkbox-xs">XS</label>
+
+                                     <input type="checkbox" id="checkbox-s">&nbsp;
+                                     <label for="checkbox-s">S</label>
+
+                                     <input type="checkbox" id="checkbox-m">&nbsp;
+                                     <label for="checkbox-m">M</label>
+
+                                     <input type="checkbox" id="checkbox-l">&nbsp;
+                                     <label for="checkbox-l">L</label>
+                                 </form>
                              </div>
                          </li>
                          <li class="filter__item">price <img src="img/catalog/arrow.svg " alt="arrow"></li>
                      </ul>
                  </div>
-                 <div class="filter-category">
-                     <div class="filter-category__container">
-                         <div class="filter__img filter-category__head">
-                             <h1>filter &nbsp;&nbsp;&#9776;</h1>
-                         </div>
-                         <ul class="filter-category__list">
-                             <li class="filter-category__item"><a class="filter-category__link" href="#">category</a>
-                                 <ul class="filter-category__junior">
-                                     <li class="filter-category__junior-item"><a class="filter-category__junior-link"
-                                             href="#">Accessories</a>
-                                     </li>
-                                     <li class="filter-category__junior-item"><a class="filter-category__junior-link"
-                                             href="#">Bags</a></li>
-                                     <li class="filter-category__junior-item"><a class="filter-category__junior-link"
-                                             href="#">Denim</a></li>
-                                     <li class="filter-category__junior-item"><a class="filter-category__junior-link"
-                                             href="#">Hoodies &
-                                             Sweatshirts</a></li>
-                                     <li class="filter-category__junior-item"><a class="filter-category__junior-link"
-                                             href="#">Jackets & Coats</a>
-                                     </li>
-                                     <li class="filter-category__junior-item"><a class="filter-category__junior-link"
-                                             href="#">Polos</a></li>
-                                     <li class="filter-category__junior-item"><a class="filter-category__junior-link"
-                                             href="#">Shirts</a></li>
-                                     <li class="filter-category__junior-item"><a class="filter-category__junior-link"
-                                             href="#">Shoes</a></li>
-                                     <li class="filter-category__junior-item"><a class="filter-category__junior-link"
-                                             href="#">Sweaters &
-                                             Knits</a></li>
-                                     <li class="filter-category__junior-item"><a class="filter-category__junior-link"
-                                             href="#">Tanks</a></li>
-                                     <li class="filter-category__junior-item"><a class="filter-category__junior-link"
-                                             href="#">T-Shirts</a></li>
-                                 </ul>
-                             </li>
-                             <li class="filter-category__item"><a class="filter-category__link" href="#">brand</a></li>
-                             <li class="filter-category__item"><a class="filter-category__link" href="#">designer</a>
-                             </li>
-                         </ul>
-                     </div>
-                 </div>
              </div>
          </section>
-         <section class="catalog-section-first">
-             <ul class="catalog-section-first__list">
-                 <li class="catalog-section-first__item">
-                     <img src="img/catalog/1.png" alt="catalog_img1" class="catalog-section-first__img">
-                     <div class="catalog-section-first__item__cantainer">
-                         <h2 class="catalog-section-first__item__header">ellery x m'o capsule</h2>
-                         <p class="catalog-section-first__item__text">Known for her sculptural takes on
-                             traditional
-                             tailoring,
-                             Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                         <p class="catalog-section-first__item__price">$52.00</p>
+         <section class="featured center">
+             <ul class="featured__list">
+                 <li class="featured__item">
+                     <img src="img/man-in-jacket-blue.jpg" alt="man-in-jacket" width="360" height="420">
+                     <div class="featured__item-containet">
+                         <h3 class="featured__item-header">ellery x m'o capsule</h3>
+                         <p class="featured__item-text">Known for her sculptural takes on traditional tailoring,
+                             Australian arbiter of cool Kym Ellery
+                             teams up with Moda Operandi.</p>
+                         <p class="featured__item-price">$52.00</p>
                      </div>
                  </li>
-                 <li class="catalog-section-first__item">
-                     <img src="img/catalog/2.png" alt="catalog_img2" class="catalog-section-first__img">
-                     <div class="catalog-section-first__item__cantainer">
-                         <h2 class="catalog-section-first__item__header">ellery x m'o capsule</h2>
-                         <p class="catalog-section-first__item__text">Known for her sculptural takes on
-                             traditional
-                             tailoring,
-                             Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                         <p class="catalog-section-first__item__price">$52.00</p>
+                 <li class="featured__item">
+                     <img src="img/model-in-red-skirt.jpg" alt="model-in-red-skirt" width="360" height="420">
+                     <div class="featured__item-containet">
+                         <h3 class="featured__item-header">ellery x m'o capsule</h3>
+                         <p class="featured__item-text">Known for her sculptural takes on traditional tailoring,
+                             Australian arbiter of cool Kym Ellery
+                             teams up with Moda Operandi.</p>
+                         <p class="featured__item-price">$52.00</p>
                      </div>
                  </li>
-                 <li class="catalog-section-first__item">
-                     <img src="img/catalog/3.png" alt="catalog_img3" class="catalog-section-first__img">
-                     <div class="catalog-section-first__item__cantainer">
-                         <h2 class="catalog-section-first__item__header">ellery x m'o capsule</h2>
-                         <p class="catalog-section-first__item__text">Known for her sculptural takes on
-                             traditional
-                             tailoring,
-                             Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                         <p class="catalog-section-first__item__price">$52.00</p>
+                 <li class="featured__item">
+                     <img src="img/man-in-shorts.jpg" alt="man-in-shorts" width="360" height="420">
+                     <div class="featured__item-containet">
+                         <h3 class="featured__item-header">ellery x m'o capsule</h3>
+                         <p class="featured__item-text">Known for her sculptural takes on traditional tailoring,
+                             Australian arbiter of cool Kym Ellery
+                             teams up with Moda Operandi.</p>
+                         <p class="featured__item-price">$52.00</p>
                      </div>
                  </li>
-                 <li class="catalog-section-first__item">
-                     <img src="img/catalog/4.png" alt="catalog_img4" class="catalog-section-first__img">
-                     <div class="catalog-section-first__item__cantainer">
-                         <h2 class="catalog-section-first__item__header">ellery x m'o capsule</h2>
-                         <p class="catalog-section-first__item__text">Known for her sculptural takes on
-                             traditional
-                             tailoring,
-                             Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                         <p class="catalog-section-first__item__price">$52.00</p>
+                 <li class="featured__item">
+                     <img src="img/man-in-trousers.jpg" alt="man-in-trousers" width="360" height="420">
+                     <div class="featured__item-containet">
+                         <h3 class="featured__item-header">ellery x m'o capsule</h3>
+                         <p class="featured__item-text">Known for her sculptural takes on traditional tailoring,
+                             Australian arbiter of cool Kym Ellery
+                             teams up with Moda Operandi.</p>
+                         <p class="featured__item-price">$52.00</p>
                      </div>
                  </li>
-                 <li class="catalog-section-first__item">
-                     <img src="img/catalog/5.png" alt="catalog_img5" class="catalog-section-first__img">
-                     <div class="catalog-section-first__item__cantainer">
-                         <h2 class="catalog-section-first__item__header">ellery x m'o capsule</h2>
-                         <p class="catalog-section-first__item__text">Known for her sculptural takes on
-                             traditional
-                             tailoring,
-                             Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                         <p class="catalog-section-first__item__price">$52.00</p>
+                 <li class="featured__item">
+                     <img src="img/mode-in-longslivy.jpg" alt="mode-in-longslivy" width="360" height="420">
+                     <div class="featured__item-containet">
+                         <h3 class="featured__item-header">ellery x m'o capsule</h3>
+                         <p class="featured__item-text">Known for her sculptural takes on traditional tailoring,
+                             Australian arbiter of cool Kym Ellery
+                             teams up with Moda Operandi.</p>
+                         <p class="featured__item-price">$52.00</p>
                      </div>
                  </li>
-                 <li class="catalog-section-first__item">
-                     <img src="img/catalog/6.png" alt="catalog_img6" class="catalog-section-first__img">
-                     <div class="catalog-section-first__item__cantainer">
-                         <h2 class="catalog-section-first__item__header">ellery x m'o capsule</h2>
-                         <p class="catalog-section-first__item__text">Known for her sculptural takes on
-                             traditional
-                             tailoring,
-                             Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                         <p class="catalog-section-first__item__price">$52.00</p>
+                 <li class="featured__item">
+                     <img src="img/model-in-tshort.jpg" alt="model-in-tshort" width="360" height="420">
+                     <div class="featured__item-containet">
+                         <h3 class="featured__item-header">ellery x m'o capsule</h3>
+                         <p class="featured__item-text">Known for her sculptural takes on traditional tailoring,
+                             Australian arbiter of cool Kym Ellery
+                             teams up with Moda Operandi.</p>
+                         <p class="featured__item-price">$52.00</p>
                      </div>
                  </li>
-                 <li class="catalog-section-first__item">
-                     <img src="img/catalog/7.png" alt="catalog_img7" class="catalog-section-first__img">
-                     <div class="catalog-section-first__item__cantainer">
-                         <h2 class="catalog-section-first__item__header">ellery x m'o capsule</h2>
-                         <p class="catalog-section-first__item__text">Known for her sculptural takes on
-                             traditional
-                             tailoring,
-                             Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                         <p class="catalog-section-first__item__price">$52.00</p>
+                 <li class="featured__item">
+                     <img src="img/model-in-shirt.jpg" alt="model-in-shirt.jpg" width="360" height="420">
+                     <div class="featured__item-containet">
+                         <h3 class="featured__item-header">ellery x m'o capsule</h3>
+                         <p class="featured__item-text">Known for her sculptural takes on traditional tailoring,
+                             Australian arbiter of cool Kym Ellery
+                             teams up with Moda Operandi.</p>
+                         <p class="featured__item-price">$52.00</p>
                      </div>
                  </li>
-                 <li class="catalog-section-first__item">
-                     <img src="img/catalog/8.png" alt="catalog_img8" class="catalog-section-first__img">
-                     <div class="catalog-section-first__item__cantainer">
-                         <h2 class="catalog-section-first__item__header">ellery x m'o capsule</h2>
-                         <p class="catalog-section-first__item__text">Known for her sculptural takes on
-                             traditional
-                             tailoring,
-                             Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                         <p class="catalog-section-first__item__price">$52.00</p>
+                 <li class="featured__item">
+                     <img src="img/model-in-jacket.jpg" alt="model-in-jacket" width="360" height="420">
+                     <div class="featured__item-containet">
+                         <h3 class="featured__item-header">ellery x m'o capsule</h3>
+                         <p class="featured__item-text">Known for her sculptural takes on traditional tailoring,
+                             Australian arbiter of cool Kym Ellery
+                             teams up with Moda Operandi.</p>
+                         <p class="featured__item-price">$52.00</p>
                      </div>
                  </li>
-                 <li class="catalog-section-first__item">
-                     <img src="img/catalog/9.png" alt="catalog_img9" class="catalog-section-first__img">
-                     <div class="catalog-section-first__item__cantainer">
-                         <h2 class="catalog-section-first__item__header">ellery x m'o capsule</h2>
-                         <p class="catalog-section-first__item__text">Known for her sculptural takes on
-                             traditional
-                             tailoring,
-                             Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                         <p class="catalog-section-first__item__price">$52.00</p>
+                 <li class="featured__item">
+                     <img src="img/model-in-shorts.jpg" alt="model-in-shorts" width="360" height="420">
+                     <div class="featured__item-containet">
+                         <h3 class="featured__item-header">ellery x m'o capsule</h3>
+                         <p class="featured__item-text">Known for her sculptural takes on traditional tailoring,
+                             Australian arbiter of cool Kym Ellery
+                             teams up with Moda Operandi.</p>
+                         <p class="featured__item-price">$52.00</p>
                      </div>
                  </li>
              </ul>
              <div class="pagination">
                  <ul class="pagination__list">
                      <li><a class="pagination__item pagination__bracket" href="#">&lsaquo;</a></li>
-                     <li><a class="pagination__item" class="active" href="#">1</a></li>
+                     <li><a class="pagination__item" href="#">1</a></li>
                      <li><a class="pagination__item" href="#">2</a></li>
                      <li><a class="pagination__item" href="#">3</a></li>
                      <li><a class="pagination__item" href="#">4</a></li>
@@ -268,7 +258,7 @@
              </div>
          </section>
          <section class="delivery">
-             <ul class="delivery__list main-center">
+             <ul class="delivery__list center">
                  <li class="delivery__item">
                      <div class="delivery__item-container">
                          <img src="img/delivery.svg" alt="delivery" width="40" height="40">
@@ -298,7 +288,7 @@
      </main>
      <footer>
          <div class="subscribe">
-             <ul class="subscribe__list main-center">
+             <ul class="subscribe__list center">
                  <li class="subscribe__item">
                      <img src="img/Intersect.png" alt="intersect">
                      <p class="subscribe__item-text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, <span> a

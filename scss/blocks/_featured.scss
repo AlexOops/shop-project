@@ -67,3 +67,32 @@
         cursor: pointer;
     }
 }
+
+.pagination {
+    border: 1px solid $background-color-catalog;
+    border-radius: 3px;
+    width: 283px;
+    height: 43px;
+    padding: 12px 16px;
+    margin: 18px 0 96px 415px;
+
+    &__list {
+        display: flex;
+    }
+
+    &__item {
+        @include font(16px, 300,19px);
+        text-decoration: none;
+        color: $color-grey;
+        padding-left: 18px;
+
+        &:hover {
+            color: $color-pink;
+        }
+    }
+
+    &__bracket {
+        @include font(30px, 400, 12px);
+        color: $background-header;
+    }
+}

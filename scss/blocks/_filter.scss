@@ -31,13 +31,22 @@
     }
 
     .filter-wrapper {
-        padding: 51px 0 64px 0;
+        padding-top: 51px;
 
         .filter__img {
             display: flex;
+            padding-left: 17px;
+
+            &-wrp {
+                display: flex;
+            }
 
             &-header {
                 @include font-tt(14px, 600, 17px, uppercase);
+
+                span {
+                    padding-left: 20px;
+                }
             }
 
             &-arrow {
@@ -50,19 +59,23 @@
             background-color: $color-white;
             visibility: hidden;
 
+            &-header {
+                @include font-tt(14px, 600, 17px, uppercase);
+                color: $color-pink;
+            }
+
             &__head {
-                padding: 13px 0 16px 16px;
+                padding: 13px 0 16px 0px;
                 color: $color-pink;
                 text-transform: uppercase;
             }
 
             &__container {
                 width: 360px;
-                height: 531px;
+                height: 547px;
                 box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
                 padding-left: 17px;
             }
-
 
             &__item {
                 display: flex;
@@ -108,13 +121,13 @@
         }
     }
 
-    .filter-wrapper:hover .filter-category {
+    .filter__img-wrp:hover .filter-category {
         visibility: visible;
     }
 
     .filter__list {
         display: flex;
-        padding-left: 320px;
+        padding-left: 300px;
     }
 
     .filter__item {
@@ -130,7 +143,7 @@
     .filter-size {
         visibility: hidden;
         position: absolute;
-        top: 68px;
+        top: 69px;
         left: 544px;
         width: 79px;
         height: 103px;
@@ -138,7 +151,7 @@
         background-color: #ffff;
 
         &__list {
-            padding: 7px 11px 9px;
+            padding: 10px 15px 10px;
         }
 
         &__item {
@@ -157,7 +170,7 @@
         .filter-category {
             position: absolute;
             top: 38px;
-            left: -32px;
+            left: 0;
         }
     }
 }
