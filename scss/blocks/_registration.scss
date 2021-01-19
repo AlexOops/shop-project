@@ -1,110 +1,99 @@
-.registration-header {
-    height: 148px;
-    background-color: $color-gray-reg;
-    display: flex;
-    align-items: center;
-    padding-left: 230px;
+.registration {
+    .registration-container {
+        padding-top: 64px;
+        padding-bottom: 96px;
+        display: flex;
 
-    &__text {
-        text-transform: uppercase;
-        color: $color-pink;
-    }
-}
+        .form {
+            width: 360px;
 
-.registration-container {
-    padding-top: 64px;
-    padding-bottom: 96px;
-    display: flex;
-
-    .form {
-        width: 360px;
-
-        .label {
-            display: block;
-            font-weight: 300;
-            font-size: 16px;
-            padding-bottom: 20px;
-        }
-
-        .input {
-            width: 350px;
-            height: 44px;
-            border: 1px solid $light-gray;
-            margin-bottom: 20px;
-
-            &:focus {
-                border: 1px solid $color-pink;
+            &__header {
+                @include font (16px, 300, 19px);
+                display: block;
+                padding-bottom: 20px;
             }
 
-            &:invalid {
-                border: 1px solid $color-pink;
-                background-color: $color-gray-reg;
+            &__input {
+                width: 350px;
+                height: 44px;
+                border: 1px solid $light-gray;
+                margin-bottom: 20px;
+
+                &:focus {
+                    border: 1px solid $color-pink;
+                }
+
+                &:invalid {
+                    border: 1px solid $color-pink;
+                    background-color: $color-gray-reg;
+                }
+            }
+
+            &__text {
+                @include font(13px, 300, 16px);
+                min-height: 32px;
+                color: $color-gray-reg;
+            }
+
+            &__button {
+                @include font-tt(14px, 400, 17px, uppercase);
+                height: 50px;
+                width: 167px;
+                margin-top: 39px;
+                background-color: $color-pink;
+                color: $color-white;
+
+                span {
+                    padding-left: 20px;
+                }
+
+                &:hover {
+                    border: 1px solid $color-pink;
+                    background-color: #fff;
+                    color: $color-pink;
+                    cursor: pointer;
+                }
+            }
+
+
+            &__radio {
+                display: inline;
+
+                &-label {
+                    width: 100px;
+                    font-weight: 300;
+                    font-size: 15px;
+                    padding-left: 10px;
+                    padding-right: 20px;
+                }
             }
         }
 
-        &__text {
-            font-weight: 300;
-            font-size: 13px;
-            min-height: 32px;
-            color: $color-gray-reg;
-        }
+        .registration-content {
+            width: 652px;
+            margin-left: 128px;
 
-        &__button {
-            @include font(14px, 400, 16px);
-            height: 50px;
-            width: 167px;
-            margin-top: 15px;
-            background-color: $color-pink;
-            color: #fff;
+            &__header {
+                @include font-tt(24px, 300, 29px, uppercase);
+                padding-bottom: 22px;
+            }
 
-            &:hover {
-                border: 1px solid $color-pink;
-                background-color: #fff;
-                color: $color-pink;
-                cursor: pointer;
+            &__text {
+                @include font(24px, 300, 29px);
+                padding-bottom: 21px;
+            }
+
+            &__item {
+                @include font(24px, 300, 29px);
+                list-style-image: url("../../img/item.svg");
+                padding-bottom: 16px;
+                margin-left: 28px;
+                padding-left: 23px;
             }
         }
 
-        .details {
-            margin-top: 35px;
-        }
-
-        .form-radio {
-            display: inline;
-
-            &__label {
-                width: 100px;
-                font-weight: 300;
-                font-size: 15px;
-                padding-left: 10px;
-                padding-right: 20px;
-            }
-        }
-    }
-
-    .registration-content {
-        width: 652px;
-        margin-left: 128px;
-
-        &__header {
-            text-transform: uppercase;
-            font-weight: 300;
-            font-size: 24px;
-            padding-bottom: 22px;
-        }
-
-        &__text {
-            font-weight: 300;
-            font-size: 24px;
-            padding-bottom: 21px;
-        }
-
-        &__item {
-            font-weight: 300;
-            font-size: 24px;
-            list-style-image: url("../../img/item.svg");
-            list-style-position: inside;
-            padding-bottom: 16px;
+        .margin-reg {
+            padding-bottom: 33px;
         }
     }
 }

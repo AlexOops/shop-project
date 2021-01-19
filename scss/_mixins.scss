@@ -3,6 +3,7 @@
     justify-content: space-between;
     align-items: center;
 }
+
 @mixin flex-center-space-around {
     display: flex;
     justify-content: space-around;
@@ -46,4 +47,10 @@
     font-weight: $font-weight;
     line-height: $line-height;
     text-transform: $text-transform;
+}
+
+@mixin tablet {
+    @media (min-width: 768px) and (max-width: 1599px) {
+        @content;
+    }
 }

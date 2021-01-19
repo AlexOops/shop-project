@@ -85,3 +85,31 @@
         }
     }
 }
+
+@media(max-width: $desktop-width) {
+    .nav-brand-container {
+        display: none;
+    }
+
+    .brand__img {
+        width: 50%;
+    }
+
+    .name {
+        .brand {
+            margin: 0;
+
+            &__content {
+                margin-left: 40px;
+
+                &-header {
+                    font-size: 44px;
+                }
+
+                &-text {
+                    font-size: 24px;
+                }
+            }
+        }
+    }
+}

@@ -154,3 +154,12 @@ body {
 	box-sizing: border-box;
 	font-family: $font-family;
 }
+
+@media(max-width: $desktop-width){
+	body{
+		width: 96%;
+	}
+	.center{
+		margin: 0;
+	}
+}
