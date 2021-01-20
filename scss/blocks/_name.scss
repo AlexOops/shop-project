@@ -96,20 +96,42 @@
             width: 50%;
         }
 
-        .name {
-            .brand {
-                margin: 0;
 
-                &__content {
-                    margin-left: 40px;
+        .brand {
+            margin: 0;
 
-                    &-header {
-                        font-size: 44px;
-                    }
+            &__content {
+                margin-left: 40px;
 
-                    &-text {
-                        font-size: 24px;
-                    }
+                &-header {
+                    font-size: 44px;
+                }
+
+                &-text {
+                    font-size: 24px;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: $tablet-width) {
+    .name{
+        margin: 0;
+        min-height: 363px;
+        @include flex-center-center;
+        .brand {
+            &__img{
+                display: none;
+            }
+
+            &__content {
+                &-header {
+                    font-size: 38px;
+                }
+
+                &-text {
+                    font-size: 20px;
                 }
             }
         }

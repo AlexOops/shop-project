@@ -91,3 +91,34 @@
     }
 
 }
+
+@media(max-width: $tablet-width) {
+    .header {
+        &-container {
+            width: 90%;
+        }
+
+        &__container-logo {
+            margin: 0;
+            display: flex;
+            padding-left: 32px;
+        }
+
+        &-items {
+            margin: 0;
+            padding-right: 30px;
+        }
+
+        &-items :nth-child(2) {
+            display: none;
+        }
+
+        .cart-item {
+            display: none;
+        }
+
+        .main-navi {
+            display: none;
+        }
+    }
+}

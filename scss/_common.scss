@@ -155,11 +155,22 @@ body {
 	font-family: $font-family;
 }
 
-@media(max-width: $desktop-width){
-	body{
+@media(max-width: $desktop-width) {
+	body {
 		width: 100%;
 	}
-	.center{
+
+	.center {
+		margin: 0;
+	}
+}
+
+@media(max-width: $tablet-width) {
+	body {
+		width: 100%;
+	}
+
+	.center {
 		margin: 0;
 	}
 }
