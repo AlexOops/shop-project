@@ -48,3 +48,20 @@
     margin-top: 30px;
     padding-top: 65px;
 }
+
+@media(max-width: $desktop-width) {
+    .stock {
+        margin-top: 20px;
+    }
+
+    .stock .stock__item {
+        width: 31.5%;
+        justify-content: center;
+    }
+
+    .stock .stock__item:last-child {
+        display: flex;
+        flex-grow: 4;
+        margin-top: 19px;
+    }
+}

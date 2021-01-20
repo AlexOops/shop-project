@@ -87,27 +87,29 @@
 }
 
 @media(max-width: $desktop-width) {
-    .nav-brand-container {
-        display: none;
-    }
-
-    .brand__img {
-        width: 50%;
-    }
-
     .name {
-        .brand {
-            margin: 0;
+        .nav-brand-container {
+            display: none;
+        }
 
-            &__content {
-                margin-left: 40px;
+        .brand__img {
+            width: 50%;
+        }
 
-                &-header {
-                    font-size: 44px;
-                }
+        .name {
+            .brand {
+                margin: 0;
 
-                &-text {
-                    font-size: 24px;
+                &__content {
+                    margin-left: 40px;
+
+                    &-header {
+                        font-size: 44px;
+                    }
+
+                    &-text {
+                        font-size: 24px;
+                    }
                 }
             }
         }

@@ -24,3 +24,19 @@
         padding-top: 16px;
     }
 }
+
+@media (max-width: $desktop-width) {
+    .delivery {
+        min-height: 610px;
+        @include flex-center-center;
+
+        &__list {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__item:not(:last-child) {
+            padding-bottom: 48px;
+        }
+    }
+}

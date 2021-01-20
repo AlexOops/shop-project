@@ -96,3 +96,13 @@
         color: $background-header;
     }
 }
+
+@media(max-width: $desktop-width){
+    .featured{
+        margin-top: 154px;
+        &__list{
+            display: flex;
+            justify-content: space-around;
+        }
+    }
+}
