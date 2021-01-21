@@ -1794,6 +1794,14 @@ body {
   margin-left: 192px;
 }
 
+@media (max-width: 1599px) {
+  .shoping-cart {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .registration .registration-container {
   padding-top: 64px;
   padding-bottom: 96px;

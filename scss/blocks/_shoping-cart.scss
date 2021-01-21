@@ -171,3 +171,8 @@
         margin-left: 192px;
     }
 }
+@media(max-width: $desktop-width){
+    .shoping-cart {
+        justify-content: center;
+    }
+}
