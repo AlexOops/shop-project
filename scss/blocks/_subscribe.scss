@@ -123,9 +123,38 @@
         &__item-header {
             padding-bottom: 0;
         }
-        &__list{
+
+        &__list {
             display: flex;
             flex-direction: column;
+        }
+    }
+}
+
+@media(max-width: $tablet-width) {
+    .subscribe {
+        &__item-text {
+            @include font(18px, 400, 23px);
+        }
+
+        &__item-header {
+            @include font(24px, 700, 37px);
+        }
+
+        &__item-promo {
+            @include font(14px, 400, 21px);
+        }
+    }
+
+    .subscribe-bottom {
+        height: 143px;
+
+        &__container {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            flex-direction: column-reverse;
+            padding-top: 23px;
         }
     }
 }
