@@ -1796,9 +1796,32 @@ body {
 
 @media (max-width: 1599px) {
   .shoping-cart {
+    margin: 0 auto;
+  }
+  .shoping-cart__wrp {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .shoping-cart__list {
+    max-width: 95%;
+  }
+  .shoping-cart .shoping-form {
+    width: 95.5%;
+    margin: 0 auto;
+  }
+  .shoping-cart .shoping-form__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 

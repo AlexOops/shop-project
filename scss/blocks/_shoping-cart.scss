@@ -105,7 +105,7 @@
         .proceed-to-checkout {
             width: 360px;
             height: 214px;
-            background-color: #F5F3F3;
+            background-color: $background-cart;
             padding: 39px 34px 42px 44px;
 
             .sub-total {
@@ -126,7 +126,7 @@
             }
 
             .separator {
-                background: #E2E2E2;
+                background: $background-sprt;
                 font-size: 1px;
                 height: 1px;
                 overflow: hidden;
@@ -171,8 +171,30 @@
         margin-left: 192px;
     }
 }
-@media(max-width: $desktop-width){
+
+@media(max-width: $desktop-width) {
     .shoping-cart {
-        justify-content: center;
+        margin: 0 auto;
+        &__wrp{
+            flex-wrap: wrap;
+            @include flex-center-center;
+        }
+
+        &__list {
+            max-width: 95%;
+        }
+ 
+        .shoping-form {
+            width: 95.5%;
+            margin: 0 auto;
+            &__list{
+                display: flex;
+
+            }
+            &__item{
+                
+            }
+        }
     }
+
 }
