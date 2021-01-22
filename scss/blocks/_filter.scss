@@ -143,3 +143,65 @@
         }
     }
 }
+
+@media (max-width: $desktop-width) {
+    .filter {
+        .filter-wrapper {
+            .filter__img {
+                width: 96%;
+                display: flex;
+                justify-content: space-between;
+                margin: 0 auto;
+            }
+
+            .filter-category {
+                left: 10px;
+            }
+        }
+
+        .filter__list {
+            padding-left: 0;
+        }
+
+        .filter__item:last-child {
+            padding: 0;
+        }
+
+        .filter-size {
+            left: 600px;
+        }
+    }
+}
+
+@media (max-width: $tablet-width) {
+    .filter {
+        .filter-wrapper {
+            .filter__img {
+                padding: 0;
+            }
+
+            .filter__img-header {
+                display: none;
+            }
+
+            .filter__img-arrow {
+                padding: 0;
+            }
+
+            .block {
+                display: block;
+                padding-top: 13px;
+                padding-bottom: 16px;
+            }
+
+            .filter-category {
+                top: 38px;
+                left: 8px;
+            }
+
+            .filter-size {
+                left: 210px;
+            }
+        }
+    }
+}

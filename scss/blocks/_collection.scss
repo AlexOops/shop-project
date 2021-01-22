@@ -1,5 +1,6 @@
 .colection {
     position: relative;
+    margin-bottom: 129px;
 
     &__slider {
         background-color: $bgk-produck;
@@ -8,31 +9,9 @@
         justify-content: center;
     }
 
-    &__pagination {
-        &-direction {
-            position: absolute;
-            @include flex-center-center;
-            background-color: $pgn-bgk;
-            width: 47px;
-            height: 47px;
-            font-size: 60px;
-            padding-bottom: 15px;
-
-            &:hover {
-                color: $color-pink;
-                cursor: pointer;
-            }
-        }
-
-        &-direction-left {
-            left: 0;
-            top: 378px;
-        }
-
-        &-direction-right {
-            left: 1553px;
-            top: 378px;
-        }
+    &__img {
+        width: 597px;
+        height: 700px;
     }
 
     &__content {
@@ -97,9 +76,7 @@
     &__button {
         border: 1px solid $color-pink;
         padding: 15px 56px 14px 23px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include flex-center-center;
         margin-left: 464px;
 
         &:hover {
@@ -132,4 +109,121 @@
     height: 1px;
     overflow: hidden;
     margin: 12px 250px 12px 250px;
+}
+
+.colection__slider::before {
+    content: "\2039";
+    width: 47px;
+    height: 47px;
+    background-color: $pgn-bgk;
+    font-size: 60px;
+    z-index: 10;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    top: 365px;
+}
+
+.colection__slider::after {
+    content: "\203A";
+    width: 47px;
+    height: 47px;
+    background-color: $pgn-bgk;
+    font-size: 60px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+    top: 365px;
+}
+
+@media (max-width: $desktop-width) {
+    .colection {
+        .colection__content {
+            margin: 0;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .colection__content-text {
+            width: 72%;
+            margin: 0 auto;
+            padding: 0;
+            height: 52px;
+            overflow: hidden;
+        }
+
+        .separator-bottom {
+            margin: 0 auto;
+            width: 83%;
+        }
+
+        .separator-header {
+            margin: 12px auto;
+            width: 8%;
+        }
+
+        .colection__content-price {
+            padding-top: 32px;
+        }
+
+        .colection__button {
+            margin: 0 auto;
+            max-width: 27.5%;
+            max-height: 47px;
+            padding: 14px 30px 14px 23px;
+        }
+    }
+}
+
+@media(max-width: $tablet-width) {
+    .colection {
+        .colection__content-header {
+            padding-top: 44px;
+        }
+
+        .colection__img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+
+        .colection__content-text {
+            width: 72%;
+            margin: 0 auto;
+            padding: 0;
+            min-height: 105px;
+            overflow: hidden;
+        }
+
+        .colection__content-price {
+            padding-bottom: 32px;
+        }
+
+        .colection__filter-item {
+            padding: 12px 22px 48px 0;
+        }
+
+        .colection__filter-link {
+            @include font(10px, 400, 12px);
+        }
+
+        .colection__filter-item:last-child {
+            padding-right: 0;
+        }
+
+        .separator-header {
+            margin: 12px auto;
+            width: 17%;
+        }
+
+        .colection__button {
+            max-width: none;
+        }
+    }
 }

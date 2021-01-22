@@ -28,3 +28,21 @@
         }
     }
 }
+
+@media(max-width: $desktop-width) {
+    .breadcrumbs {
+        &-container {
+            width: 96%;
+            margin: 0 auto;
+        }
+    }
+}
+
+@media(max-width: $tablet-width) {
+    .breadcrumbs {
+        &-container {
+            flex-wrap: wrap;
+            @include flex-center-space-around;
+        }
+    }
+}

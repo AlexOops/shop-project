@@ -99,10 +99,30 @@
 
 @media(max-width: $desktop-width){
     .featured{
-        margin-top: 154px;
+        margin-top: 64px;
         &__list{
             display: flex;
             justify-content: space-around;
         }
+    }
+    .hidden-item{
+        display: none;
+    }
+    .pagination{
+        margin: 0 auto 63px;
+    }
+}
+@media (max-width: $tablet-width){
+    .featured{
+        margin-top: 64px;
+        &__item{
+            margin-bottom: 16px;
+        }
+        &__button {
+            margin-top: 41px;
+        }
+    }
+    .hidden-item{
+        display: none;
     }
 }

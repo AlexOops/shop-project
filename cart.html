@@ -66,7 +66,8 @@
             </div>
         </nav>
         <section class="shoping-cart center">
-            <ul class="shoping-cart__list">
+            <div class="shoping-cart__wrp">
+                        <ul class="shoping-cart__list">
                 <li class="shoping-cart__item first-card">
                     <img src="img/man-in-shorts.jpg" alt="man-in-shorts" width="263" height="306">
                     <ul class="shoping-cart__item-wrapper">
@@ -110,24 +111,27 @@
                     </ul>
                 </li>
             </ul>
+            <div class="shoping-cart__bottons">
+                <button class="shoping-cart__button button-clear">clear shoping cart</button>
+                <button class="shoping-cart__button button-continue">continue shopping</button>
+            </div>
             <div class="shoping-form">
-                <form action="method" method="POST" class="form">
-                    <p class="shoping-form__header">shiping adress</p>
-                    <input type="text" class="shoping-form__input" name="text" placeholder="Bangladesh">
-                    <input type="text" class="shoping-form__input" name="text" placeholder="State">
-                    <input type="text" class="shoping-form__input" name="text" placeholder="Postcode/Zip">
-                    <button class="get-a-quote">get a quote</button>
+                <form class="shoping-form__list" action="method" method="POST" class="form">
+                    <fieldset>
+                     <legend class="shoping-form__header">shiping adress</legend>
+                        <input type="text" class="shoping-form__input" name="text" placeholder="Bangladesh">
+                        <input type="text" class="shoping-form__input" name="text" placeholder="State">
+                        <input type="text" class="shoping-form__input" name="text" placeholder="Postcode/Zip">
+                        <button class="get-a-quote" type="submit">get a quote</button>
+                    </fieldset>
+                 
                     <div class="proceed-to-checkout">
                         <p class="sub-total">sub total &nbsp;&nbsp;&nbsp; $900</p>
                         <p class="grand-total">grand total <span>$900</span></p>
                         <div class="separator"></div>
-                        <button class="proceed-to-checkout__button button-checkout">proceed to checkout</button>
+                        <button class="proceed-to-checkout__button button-checkout" type="submit">proceed to checkout</button>
                     </div>
                 </form>
-            </div>
-            <div class="shoping-cart__bottons">
-                <button class="shoping-cart__button button-clear">clear shoping cart</button>
-                <button class="shoping-cart__button button-continue">continue shopping</button>
             </div>
         </section>
     </main>
@@ -144,16 +148,16 @@
                     <p class="subscribe__item-promo">for our newletter and promotion</p>
                     <form class="subscribe__form" action="method" method="POST">
                         <input class="subscribe__form-input" type="text" name="subscribe"
-                            placeholder="Email Your Email">
+                            placeholder="Enter Your Email">
                         <button class="subscribe__form-button" type="submit">Subscribe</button>
                     </form>
                 </li>
             </ul>
         </div>
-        <div class="subscribe__bottom">
-            <div class="subscribe__bottom-container">
-                <p class="subscribe__bottom-content">&copy; 2021 Brand All Rights Reserved.</p>
-                <ul class="subscribe__bottom-social">
+        <div class="subscribe-bottom">
+            <div class="subscribe-bottom__container">
+                <p class="subscribe-bottom__content">&copy; 2021 Brand All Rights Reserved.</p>
+                <ul class="subscribe-bottom__social">
                     <li class="social__item"><i class="fab fa-facebook-f"></i></li>
                     <li class="social__item"><i class="fab fa-instagram"></i></li>
                     <li class="social__item"><i class="fab fa-pinterest-p"></i></li>
