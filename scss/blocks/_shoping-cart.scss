@@ -74,7 +74,7 @@
     }
 
     .shoping-form {
-        width: 360px;
+        max-width: 360px;
         margin-left: 120px;
 
         &__header {
@@ -166,22 +166,20 @@
             cursor: pointer;
         }
     }
-
-    .button-continue {
-        margin-left: 192px;
-    }
 }
 
 @media(max-width: $desktop-width) {
     .shoping-cart {
         margin: 0 auto;
         &__wrp{
-            flex-wrap: wrap;
             @include flex-center-center;
         }
 
         &__list {
             max-width: 95%;
+        }
+        &__bottons{
+            margin: 0 auto;
         }
  
         .shoping-form {
@@ -191,9 +189,7 @@
                 display: flex;
 
             }
-            &__item{
-                
-            }
+          
         }
     }
 

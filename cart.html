@@ -66,8 +66,7 @@
             </div>
         </nav>
         <section class="shoping-cart center">
-            <div class="shoping-cart__wrp">
-                        <ul class="shoping-cart__list">
+            <ul class="shoping-cart__list">
                 <li class="shoping-cart__item first-card">
                     <img src="img/man-in-shorts.jpg" alt="man-in-shorts" width="263" height="306">
                     <ul class="shoping-cart__item-wrapper">
@@ -111,27 +110,31 @@
                     </ul>
                 </li>
             </ul>
-            <div class="shoping-cart__bottons">
-                <button class="shoping-cart__button button-clear">clear shoping cart</button>
-                <button class="shoping-cart__button button-continue">continue shopping</button>
-            </div>
-            <div class="shoping-form">
-                <form class="shoping-form__list" action="method" method="POST" class="form">
-                    <fieldset>
-                     <legend class="shoping-form__header">shiping adress</legend>
-                        <input type="text" class="shoping-form__input" name="text" placeholder="Bangladesh">
-                        <input type="text" class="shoping-form__input" name="text" placeholder="State">
-                        <input type="text" class="shoping-form__input" name="text" placeholder="Postcode/Zip">
-                        <button class="get-a-quote" type="submit">get a quote</button>
-                    </fieldset>
-                 
-                    <div class="proceed-to-checkout">
-                        <p class="sub-total">sub total &nbsp;&nbsp;&nbsp; $900</p>
-                        <p class="grand-total">grand total <span>$900</span></p>
-                        <div class="separator"></div>
-                        <button class="proceed-to-checkout__button button-checkout" type="submit">proceed to checkout</button>
-                    </div>
-                </form>
+            <div class="wrp">
+
+                <div class="shoping-form">
+                    <form class="shoping-form__list" action="method" method="POST" class="form">
+                        <fieldset>
+                            <legend class="shoping-form__header">shiping adress</legend>
+                            <input type="text" class="shoping-form__input" name="text" placeholder="Bangladesh">
+                            <input type="text" class="shoping-form__input" name="text" placeholder="State">
+                            <input type="text" class="shoping-form__input" name="text" placeholder="Postcode/Zip">
+                            <button class="get-a-quote" type="submit">get a quote</button>
+                        </fieldset>
+
+                        <div class="proceed-to-checkout">
+                            <p class="sub-total">sub total &nbsp;&nbsp;&nbsp; $900</p>
+                            <p class="grand-total">grand total <span>$900</span></p>
+                            <div class="separator"></div>
+                            <button class="proceed-to-checkout__button button-checkout" type="submit">proceed to
+                                checkout</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="shoping-cart__bottons">
+                    <button class="shoping-cart__button button-clear">clear shoping cart</button>
+                    <button class="shoping-cart__button button-continue">continue shopping</button>
+                </div>
             </div>
         </section>
     </main>

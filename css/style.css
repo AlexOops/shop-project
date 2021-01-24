@@ -1679,7 +1679,7 @@ body {
 }
 
 .shoping-cart .shoping-form {
-  width: 360px;
+  max-width: 360px;
   margin-left: 120px;
 }
 
@@ -1790,17 +1790,11 @@ body {
   cursor: pointer;
 }
 
-.shoping-cart .button-continue {
-  margin-left: 192px;
-}
-
 @media (max-width: 1599px) {
   .shoping-cart {
     margin: 0 auto;
   }
   .shoping-cart__wrp {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1813,6 +1807,9 @@ body {
   }
   .shoping-cart__list {
     max-width: 95%;
+  }
+  .shoping-cart__bottons {
+    margin: 0 auto;
   }
   .shoping-cart .shoping-form {
     width: 95.5%;
