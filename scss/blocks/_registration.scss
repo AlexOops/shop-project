@@ -97,3 +97,43 @@
         }
     }
 }
+
+@media (max-width: $desktop-width) {
+    .registration {
+        .registration-container {
+            width: 96%;
+            margin: 0 auto;
+
+            .registration-content {
+                margin-left: 23px;
+
+                &__header {
+                    @include font(16px, 300, 19px);
+                }
+
+                &__text {
+                    @include font(16px, 300, 19px);
+                }
+
+                &__item {
+                    @include font(16px, 300, 19px);
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: $tablet-width) {
+    .registration {
+        .registration-container {
+            display: flex;
+            flex-direction: column;
+
+            .registration-content {
+                margin: 0;
+                width: 357px;
+                padding-top: 40px;
+            }
+        }
+    }
+}
