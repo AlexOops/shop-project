@@ -74,8 +74,11 @@
     }
 
     .shoping-form {
-        max-width: 360px;
         margin-left: 120px;
+
+        &__list {
+            width: 360px;
+        }
 
         &__header {
             @include font-tt(16px, 300, 19px, uppercase);
@@ -152,6 +155,8 @@
 
     .shoping-cart__bottons {
         margin-bottom: 128px;
+        display: flex;
+        justify-content: space-between;
     }
 
     &__button {
@@ -170,27 +175,41 @@
 
 @media(max-width: $desktop-width) {
     .shoping-cart {
+        width: 96%;
         margin: 0 auto;
-        &__wrp{
-            @include flex-center-center;
+        @include flex-column-center;
+
+        &__wrp {
+            @include flex-column-center;
         }
 
-        &__list {
-            max-width: 95%;
-        }
-        &__bottons{
-            margin: 0 auto;
-        }
- 
         .shoping-form {
-            width: 95.5%;
             margin: 0 auto;
-            &__list{
-                display: flex;
+            display: flex;
+            justify-content: space-around;
+            max-width: none;
 
+            .proceed-to-checkout {
+                margin-top: 40px;
+                margin-left: 15px;
             }
-          
         }
     }
+}
 
+@media (max-width: $tablet-width) {
+    .shoping-cart {
+        width: 95%;
+
+        .shoping-form {
+            &__list {
+                width: 360px;
+            }
+
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            max-width: none;
+        }
+    }
 }
