@@ -141,6 +141,11 @@ button {
 	outline-offset: 0;
 }
 
+* {
+	box-sizing: border-box;
+	font-family: $font-family;
+}
+
 body {
 	width: 1600px;
 	margin: 0 auto;
@@ -150,22 +155,7 @@ body {
 	margin: 0 230px;
 }
 
-* {
-	box-sizing: border-box;
-	font-family: $font-family;
-}
-
 @media(max-width: $desktop-width) {
-	body {
-		width: 100%;
-	}
-
-	.center {
-		margin: 0;
-	}
-}
-
-@media(max-width: $tablet-width) {
 	body {
 		width: 100%;
 	}

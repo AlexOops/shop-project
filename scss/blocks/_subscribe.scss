@@ -31,7 +31,6 @@
 
         &-promo {
             @include font-tt(18px, 400, 30px, uppercase);
-            font-weight: 380px;
             padding-bottom: 32px;
         }
     }
@@ -96,20 +95,20 @@
 
     &__social {
         width: 200px;
-        @include flex-center-space-around
-    }
+        @include flex-center-space-around;
 
-    .social__item {
-        @include font(18px, 400, 18px);
-        background-color: $background-form;
-        height: 32px;
-        width: 32px;
-        text-align: center;
-        padding-top: 8px;
+        &-item {
+            @include font(18px, 400, 18px);
+            background-color: $background-form;
+            height: 32px;
+            width: 32px;
+            text-align: center;
+            padding-top: 8px;
 
-        &:hover {
-            background-color: #F16D7F;
-            color: #F8F8F8;
+            &:hover {
+                background-color: #F16D7F;
+                color: #F8F8F8;
+            }
         }
     }
 }
