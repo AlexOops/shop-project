@@ -1,35 +1,4 @@
 .filter {
-    .breadcrumbs {
-        height: 148px;
-        background: $background-color;
-
-        &-container {
-            @include flex-center-space-between;
-            height: inherit;
-        }
-
-        &__header {
-            @include font-tt(24px, 400, 29px, uppercase);
-            color: $color-pink;
-            font-family: $font-family;
-        }
-
-        &__list {
-            display: flex;
-        }
-
-        &__link {
-            text-decoration: none;
-            @include font-tt(14px, 300, 17px, uppercase);
-            color: $color-grey;
-            padding-left: 10px;
-
-            &:hover {
-                color: $color-pink;
-            }
-        }
-    }
-
     .filter-wrapper {
         padding-top: 51px;
 

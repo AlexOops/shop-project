@@ -1,0 +1,135 @@
+.colection {
+    position: relative;
+
+    &__slider {
+        background-color: $bgk-produck;
+        height: 777px;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__pagination {
+        &-direction {
+            position: absolute;
+            @include flex-center-center;
+            background-color: $pgn-bgk;
+            width: 47px;
+            height: 47px;
+            font-size: 60px;
+            padding-bottom: 15px;
+
+            &:hover {
+                color: $color-pink;
+                cursor: pointer;
+            }
+        }
+
+        &-direction-left {
+            left: 0;
+            top: 378px;
+        }
+
+        &-direction-right {
+            left: 1553px;
+            top: 378px;
+        }
+    }
+
+    &__content {
+        left: 230px;
+        top: 720px;
+        width: 1141px;
+        height: 601px;
+        border: 1px solid $background-content;
+        background: $color-white;
+        margin-top: -50px;
+
+        &-header {
+            @include font-tt (14px, 300, 17px, uppercase);
+            color: $color-pink;
+            text-align: center;
+            padding-top: 64px;
+        }
+
+        &-description {
+            @include font-tt (18px, 300, 22px, uppercase);
+            text-align: center;
+            padding-bottom: 48px;
+        }
+
+        &-text {
+            @include font(14px, 300, 17px);
+            color: $color-text-product;
+            height: 50px;
+            text-align: center;
+            padding: 0 292px 82px 294px;
+        }
+
+        &-price {
+            @include font(24px, 300, 29px);
+            color: $color-pink;
+            text-align: center;
+            padding-bottom: 65px;
+        }
+    }
+
+    &__filter {
+        display: flex;
+        justify-content: center;
+
+        &-item {
+            padding-right: 22px;
+            padding-top: 65px;
+            padding: 65px 22px 49px 0;
+        }
+
+        &-link {
+            @include font-tt(14px, 400, 17px, uppercase);
+            text-decoration: none;
+            color: $color-link;
+        }
+
+        .arrow-img {
+            padding-left: 9px;
+        }
+    }
+
+    &__button {
+        border: 1px solid $color-pink;
+        padding: 15px 56px 14px 23px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 464px;
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        span {
+            @include font(16px, 400, 19px);
+            color: $color-pink;
+            padding-left: 23px;
+        }
+    }
+}
+
+.margin {
+    padding-bottom: 110px;
+}
+
+.separator-header {
+    background: $color-pink;
+    font-size: 1px;
+    height: 3px;
+    overflow: hidden;
+    margin: 12px 538px 12px 540px;
+}
+
+.separator-bottom {
+    background: $background-content;
+    font-size: 1px;
+    height: 1px;
+    overflow: hidden;
+    margin: 12px 250px 12px 250px;
+}

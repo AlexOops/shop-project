@@ -78,23 +78,23 @@
     }
 }
 
-.subscribe__bottom {
+.subscribe-bottom {
     font-family: $font-family;
     background-color: $background-delivery;
     height: 79px;
 
-    &-container {
+    &__container {
         width: inherit;
         height: inherit;
         @include flex-center-space-around;
     }
 
-    &-content {
+    &__content {
         color: $color-link-header;
         @include font(16px, 400, 19px);
     }
 
-    &-social {
+    &__social {
         width: 200px;
         @include flex-center-space-around
     }
@@ -110,6 +110,22 @@
         &:hover {
             background-color: #F16D7F;
             color: #F8F8F8;
+        }
+    }
+}
+
+@media(max-width: $desktop-width) {
+    .subscribe {
+        min-height: 610px;
+        @include flex-center-center;
+        background-size: cover;
+
+        &__item-header {
+            padding-bottom: 0;
+        }
+        &__list{
+            display: flex;
+            flex-direction: column;
         }
     }
 }

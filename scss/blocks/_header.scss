@@ -9,11 +9,14 @@
 
     &__container-logo {
         margin-left: 230px;
+        display: flex
     }
 }
 
 .loupe {
     margin-left: 40px;
+    display: flex;
+    align-items: flex-end;
 }
 
 .main-navi {
@@ -45,6 +48,7 @@
     &__list {
         padding-left: 34px;
         position: relative;
+        display: flex;
     }
 }
 
@@ -55,11 +59,66 @@
     top: -6px;
     font-family: $font-family;
     color: $color-white;
-    font-size: 12px;
-    line-height: 12px;
+    @include font(12px, 400, 12px);
     width: 19px;
     height: 19px;
     background-color: $color-pink;
     @include border-radius-fifty-procent;
     @include flex-center-center;
+}
+
+@media(max-width: $desktop-width) {
+    .header {
+
+        &-container {
+            width: 95%;
+        }
+
+        &__container-logo {
+            margin: 0;
+            display: flex;
+            padding-left: 32px;
+        }
+
+        &-items {
+            margin: 0;
+            padding-right: 30px;
+        }
+
+        .main-navi {
+            display: none;
+        }
+    }
+
+}
+
+@media(max-width: $tablet-width) {
+    .header {
+        &-container {
+            width: 90%;
+        }
+
+        &__container-logo {
+            margin: 0;
+            display: flex;
+            padding-left: 32px;
+        }
+
+        &-items {
+            margin: 0;
+            padding-right: 30px;
+        }
+
+        &-items :nth-child(2) {
+            display: none;
+        }
+
+        .cart-item {
+            display: none;
+        }
+
+        .main-navi {
+            display: none;
+        }
+    }
 }

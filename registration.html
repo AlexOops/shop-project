@@ -5,7 +5,6 @@
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title>The Brand</title>
-     <link rel="stylesheet" href="css/reset.css">
      <link rel="stylesheet" href="css/style.css">
      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
      <script src="https://kit.fontawesome.com/b17de81baf.js" crossorigin="anonymous"></script>
@@ -33,7 +32,6 @@
                      <li class="main-navi__item"><a class="main-navi__link" href="product.html">Product</a></li>
                      <li class="main-navi__item"><a class="main-navi__link" href="cart.html">Cart</a></li>
                      <li class="main-navi__item"><a class="main-navi__link" href="#">Registration</a></li>
-                     </li>
                  </ul>
                  <ul class="header-items">
                      <li class="header-items__list">
@@ -61,104 +59,78 @@
          </div>
      </header>
      <main>
-         <section class="registration-form">
-             <div class="registration-header">
-                 <h1 class="registration-header__text">registration</h1>
-             </div>
-             <div class="registration-container main-center">
+        <nav class="breadcrumbs">
+            <div class="breadcrumbs-container center">
+                <h1 class="breadcrumbs__header">registration</h1>
+            </div>
+        </nav>
+         <section class="registration">
+             <div class="registration-container center">
                  <form action="method" method="POST" class="form">
-                     <label for="name" class="label">Your Name</label>
-                     <input type="text" class="input" name="text" id="name" placeholder="First Name">
-                     <input type="text" class="input" name="text" id="name" placeholder="Last Name">
-                     <div class="form-radio">
+                     <p class="form__header">Your Name</p>
+                     <input type="text" class="form__input" name="text" id="name" placeholder="First Name">
+                     <input type="text" class="form__input" name="text" id="surname" placeholder="Last Name">
+                     <div class="form__radio">
                          <input id="male" type="radio" name="radio" value="1" checked>
-                         <label for="male" class="form-radio__label">Male</label>
+                         <label for="male" class="form__radio-label">Male</label>
                      </div>
-                     <div class="form-radio">
+                     <div class="form__radio">
                          <input id="female" type="radio" name="radio" value="2">
-                         <label for="female" class="form-radio__label">Female</label>
+                         <label for="female" class="form__radio-label">Female</label>
                      </div>
-                     <label for="details" class="label details">Login details</label>
-                     <input type="email" class="input" name="text" id="details" placeholder="Email">
-                     <input type="password" class="input" name="text" id="details" placeholder="Password">
+                     <div class="margin-reg"></div>
+                     <p class="form__header">Login details</p>
+                     <input type="email" class="form__input" name="text" id="mail" placeholder="Email">
+                     <input type="password" class="form__input" name="text" id="pass" placeholder="Password">
                      <p class="form__text">Please use 8 or more characters, with at least 1 number and a mixture of
                          uppercase and lowercase
                          letters</p>
-                     <button class="form__button">Join now &nbsp;&nbsp; &#10230;</button>
+                     <button class="form__button">Join now<span>&#10230;</span></button>
                  </form>
                  <div class="registration-content">
                      <h2 class="registration-content__header">loyalty has its perks</h2>
                      <h3 class="registration-content__text">Get in on the loyalty program where you can earn points and
                          unlock serious perks. Starting with these as soon as you join:</h3>
                      <ul class="registration-content__list">
-                         <li class="registration-content__item">15% off welcome offer</li>
-                         <li class="registration-content__item">Free shipping, returns and exchanges on all orders</li>
-                         <li class="registration-content__item">$10 off a purchase on your birthday</li>
-                         <li class="registration-content__item">Early access to products</li>
-                         <li class="registration-content__item">Exclusive offers & rewards</li>
+                         <li class="registration-content__item"><p>15% off welcome offer</p></li>
+                         <li class="registration-content__item"><p>Free shipping, returns and exchanges on all orders</p></li>
+                         <li class="registration-content__item"><p>$10 off a purchase on your birthday</p> </li>
+                         <li class="registration-content__item"><p>Early access to products</p> </li>
+                         <li class="registration-content__item"><p>Exclusive offers & rewards</p> </li>
                      </ul>
                  </div>
              </div>
          </section>
      </main>
      <footer>
-         <section class="fourth-section">
-             <ul class="fourth-section__list">
-                 <li class="fourth-section__item">
-                     <div class="fourth-section__item-container">
-                         <img src="img/delivery.svg" alt="delivery" width="40" height="40">
-                         <h3 class="fourth-section__item-header">Free Delivery</h3>
-                         <p class="fourth-section__item-text">Worldwide delivery on all. Authorit tively morph
-                             next-generation innov tion with extensive models.</p>
-                     </div>
-                 </li>
-                 <li class="fourth-section__item">
-                     <div class="fourth-section__item-container">
-                         <img src="img/sale.svg" alt="sale">
-                         <h3 class="fourth-section__item-header">Sales & discounts</h3>
-                         <p class="fourth-section__item-text">Worldwide delivery on all. Authorit tively morph
-                             next-generation innov tion with extensive models.</p>
-                     </div>
-                 </li>
-                 <li class="fourth-section__item">
-                     <div class="fourth-section__item-container">
-                         <img src="img/assurance.svg" alt="assurance">
-                         <h3 class="fourth-section__item-header">Quality assurance</h3>
-                         <p class="fourth-section__item-text">Worldwide delivery on all. Authorit tively morph
-                             next-generation innov tion with extensive models.</p>
-                     </div>
-                 </li>
-             </ul>
-         </section>
          <div class="subscribe">
-             <div class="subscribe__background"></div>
-             <ul class="subscribe__list">
-                 <li class="subscribe__item-first">
+             <ul class="subscribe__list center">
+                 <li class="subscribe__item">
                      <img src="img/Intersect.png" alt="intersect">
-                     <p class="subscribe__items-text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a
-                         pulvinar purus condimentum“ </p>
+                     <p class="subscribe__item-text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, <span> a
+                             pulvinar purus condimentum“ </span></p>
                  </li>
-                 <li class="subscribe__item-second">
-                     <h2 class="subscribe__items-header">subscribe</h2>
-                     <p class="subscribe__items-promo">for our newletter and promotion</p>
-                     <table class="follow">
-                         <tr>
-                             <td><input class='follow-by-email-address' name='email' placeholder='Email Your Email'
-                                     type='text' /></td>
-                             <td><input class='follow-by-email-submit' type='submit' value='Subscribe' /></td>
-                         </tr>
-                     </table>
+                 <li class="subscribe__item">
+                     <h2 class="subscribe__item-header">subscribe</h2>
+                     <p class="subscribe__item-promo">for our newletter and promotion</p>
+                     <form class="subscribe__form" action="method" method="POST">
+                         <input class="subscribe__form-input" type="text" name="subscribe"
+                             placeholder="Email Your Email">
+                         <button class="subscribe__form-button" type="submit">Subscribe</button>
+                     </form>
                  </li>
              </ul>
          </div>
          <div class="subscribe__bottom">
-             <p>&copy; 2021 Brand All Rights Reserved.</p>
-             <ul class="social__list">
-                 <li class="social__item"><i class="fab fa-facebook-f"></i></li>
-                 <li class="social__item"><i class="fab fa-instagram"></i></li>
-                 <li class="social__item"><i class="fab fa-pinterest-p"></i></li>
-                 <li class="social__item"><i class="fab fa-twitter"></i></li>
-             </ul>
+             <div class="subscribe__bottom-container">
+                 <p class="subscribe__bottom-content">&copy; 2021 Brand All Rights Reserved.</p>
+                 <ul class="subscribe__bottom-social">
+                     <li class="social__item"><i class="fab fa-facebook-f"></i></li>
+                     <li class="social__item"><i class="fab fa-instagram"></i></li>
+                     <li class="social__item"><i class="fab fa-pinterest-p"></i></li>
+                     <li class="social__item"><i class="fab fa-twitter"></i></li>
+                 </ul>
+             </div>
          </div>
      </footer>
  </body>
